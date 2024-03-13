@@ -10,6 +10,9 @@ class MyArray {
 	}
 }
 
+debugger;
+
 const myArray = new MyArray(1, 2, 3);
 console.log(myArray._0);
 
+debugger;

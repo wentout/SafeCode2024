@@ -18,9 +18,17 @@ class ExtendedDecoratedByBase extends DecoratedByBase {
 	}
 }
 
+
+debugger;
+
 const decorated = new DecoratedByBase;
 const exdecorated = new ExtendedDecoratedByBase;
 
+debugger;
+
+console.log(decoratedSomeProp);
+
+debugger;
 
 console.log(decorated instanceof DecoratedByBase);				// true
 console.log(exdecorated instanceof DecoratedByBase);			// false, as should be
@@ -29,10 +37,18 @@ console.log(decoratedSomeProp.valueOf() === 321);				// true
 console.log(decoratedSomeProp.valueOf() === 321);				// true
 console.log(exdecorated.someProp.valueOf() === 321);			// true
 
+debugger;
 
 const ogp = Object.getPrototypeOf;
 console.log(ogp(ogp(exdecorated)).someProp === 123);			// true
 
+debugger;
+
+// @ts-ignore
+decoratedSomeProp = 123;
+console.log(decoratedSomeProp);
+
+debugger;
 
 try {
 	// @ts-ignore
@@ -41,3 +57,5 @@ try {
     debugger;
     console.error(error);
 }
+
+debugger;

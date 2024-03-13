@@ -47,8 +47,7 @@ const extendedInstance = new ExtendedBase;
 debugger;
 
 
-
-// !!! But I NEED METHODS
+// !!! But We NEED METHODS !!!
 
 
 class MethodsBase extends BasePrototype({
@@ -77,8 +76,7 @@ instanceWithMethods.myMethod();
 debugger;
 
 
-// And the Network IS ...
-
+// And the Other Example: Network IS about stolen props ...
 
 class NetworkBase extends BasePrototype(instanceWithMethods) {
     constructor() {
