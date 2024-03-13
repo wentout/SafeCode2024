@@ -1,9 +1,8 @@
 'use strict';
 
-import BaseConstructorPrototype from 'typeomatica';
+import { Strict } from 'typeomatica';
 
-// @ts-ignore
-@BaseConstructorPrototype({ someProp: 123 })
+@Strict({ someProp: 123 })
 class DecoratedByBase {
 	someProp!: number;
 }
