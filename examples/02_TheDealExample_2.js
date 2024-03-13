@@ -99,7 +99,6 @@ try {
     const protoProto = Reflect.getPrototypeOf(Reflect.getPrototypeOf(baseInstance));
     debugger;
     console.log(protoProto);
-    console.log('here', protoProto);
 
 } catch (error) {
 
